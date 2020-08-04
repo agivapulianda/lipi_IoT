@@ -7,7 +7,7 @@
     $text=$pravename.'-'.$major.'-'.$minor;
 
     $encrypted=$mcrypt->encrypt($text);
-    $decrypted=$mcrypt->decrypt($encrypted);
+    $decrypted=$mcrypt->decrypt($encrypted); 
     
     echo 'Encrypted:'.$encrypted;
     echo '</br>';
