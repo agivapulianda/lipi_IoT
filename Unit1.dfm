@@ -15,7 +15,7 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 56
+    Left = 88
     Top = 120
     Width = 35
     Height = 13
@@ -23,7 +23,7 @@ object Form1: TForm1
     Transparent = True
   end
   object Label2: TLabel
-    Left = 56
+    Left = 88
     Top = 160
     Width = 35
     Height = 13
@@ -31,28 +31,28 @@ object Form1: TForm1
     Transparent = True
   end
   object Label3: TLabel
-    Left = 56
+    Left = 88
     Top = 296
     Width = 35
     Height = 13
     Caption = 'Major : '
   end
   object Label4: TLabel
-    Left = 56
+    Left = 88
     Top = 336
     Width = 35
     Height = 13
     Caption = 'Minor : '
   end
   object Label5: TLabel
-    Left = 96
+    Left = 128
     Top = 296
     Width = 30
     Height = 13
     Caption = '_____'
   end
   object Label6: TLabel
-    Left = 96
+    Left = 128
     Top = 336
     Width = 30
     Height = 13
@@ -73,28 +73,28 @@ object Form1: TForm1
     Transparent = True
   end
   object Edit1: TEdit
-    Left = 104
+    Left = 136
     Top = 120
     Width = 121
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 104
+    Left = 136
     Top = 160
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 56
+    Left = 88
     Top = 256
     Width = 289
     Height = 21
     TabOrder = 2
   end
   object btn1: TButton
-    Left = 80
+    Left = 112
     Top = 200
     Width = 153
     Height = 25
@@ -103,7 +103,7 @@ object Form1: TForm1
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 256
+    Left = 288
     Top = 200
     Width = 75
     Height = 25
@@ -133,7 +133,7 @@ object Form1: TForm1
     Request.BasicAuthentication = False
     Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
     HTTPOptions = [hoForceEncodeParams]
-    Left = 48
+    Left = 80
     Top = 200
   end
 end

@@ -58,7 +58,7 @@ begin
   params := TStringList.Create;
   params.Add('ODP1='+'ODP1');
   res := TStringStream.Create('');
-  idhtp1.Post('http://localhost/lipi/ODP.php', params, res);
+  idhtp1.Post('http://localhost/lipi/ODP1.php', params, res);
   ShowMessage(res.DataString);
   res.Free;
   params.free;
