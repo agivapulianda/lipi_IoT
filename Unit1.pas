@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, IdBaseComponent, IdComponent, IdTCPConnection,
-  IdTCPClient, IdHTTP;
+  IdTCPClient, IdHTTP, Buttons;
 
 type
   TForm1 = class(TForm)
@@ -21,6 +21,8 @@ type
     idhtp1: TIdHTTP;
     btn1: TButton;
     btn2: TButton;
+    Label7: TLabel;
+    BitBtn1: TBitBtn;
     procedure Button1Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
@@ -54,7 +56,7 @@ params : TStringList;
 res : TStringStream;
 begin
   params := TStringList.Create;
-  params.Add('a='+'hello');
+  params.Add('ODP1='+'ODP1');
   res := TStringStream.Create('');
   idhtp1.Post('http://localhost/lipi/ODP.php', params, res);
   ShowMessage(res.DataString);

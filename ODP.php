@@ -10,15 +10,15 @@
     $decrypted=$mcrypt->decrypt($encrypted); 
     
     echo 'Encrypted:'.$encrypted;
-    echo '</br>';
+    //echo '</br>';
     echo 'Decrypted:'.$decrypted;
-    echo '</br></br>';
+    //echo '</br></br>';
 
     echo'UUID:
     '.substr($encrypted,0,8).'-'.substr($encrypted,8,8).'-'.substr($encrypted,16,8).'-'.substr($encrypted,24,8); 
-    echo'</br>';
+    //echo'</br>';
     echo'Major:'.dechex($major);
-    echo'</br>';
+    //echo'</br>';
     echo'Minor:'.dechex($minor);
 
 class Aes
