@@ -57,9 +57,9 @@ res : TStringStream;
 begin
   params := TStringList.Create;
   params.Add('uuid='+'UUID : '+Edit3.Text);
-  //params.Add('Minor='+'Minor : '+Edit2.Text);
+  params.Add('Minor='+'Minor : '+Edit2.Text);
   res := TStringStream.Create('');
-  idhtp1.Post('http://localhost/lipi/a.php', params, res);
+  idhtp1.Post('http://localhost/lipi/ODP.php', params, res);
   ShowMessage(res.DataString);
   res.Free;
   params.free;
@@ -81,6 +81,12 @@ begin
   Edit3.Text:=(GuidToString(Uid));
   params := TStringList.Create;
   params.Add('uuid='+'UUID : '+Edit3.Text);
+  res := TStringStream.Create('');
+  idhtp1.Post('http://localhost/lipi/a.php', params, res);
+  ShowMessage(res.DataString);
+  res.Free;
+  params.free;
+
   Label5.Caption := Edit1.text;
   Label6.Caption := Edit2.text;
 end;
